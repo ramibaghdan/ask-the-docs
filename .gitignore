@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Built vector index (regenerate with src/index.py)
+index/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store

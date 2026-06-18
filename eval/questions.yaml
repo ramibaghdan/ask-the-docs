@@ -1,0 +1,69 @@
+# Evaluation question set for the FastAPI tutorial docs.
+# Each entry:
+#   question: what to ask the system
+#   expect_source_contains: a substring expected in the source_file of a correctly
+#                           retrieved chunk (drives the retrieval hit-rate metric)
+#
+# These target files that exist in data/docs/. expect_source_contains is matched as a
+# substring of the source filename, so values are chosen to be specific enough to point
+# at the right page.
+
+- question: "How do I declare a path parameter in FastAPI?"
+  expect_source_contains: "path-params.md"
+
+- question: "How do I add numeric validations to a path parameter?"
+  expect_source_contains: "path-params-numeric-validations"
+
+- question: "How do I declare an optional query parameter?"
+  expect_source_contains: "query-params.md"
+
+- question: "How do I add string validations like minimum length to a query parameter?"
+  expect_source_contains: "query-params-str-validations"
+
+- question: "How do I define a request body using a Pydantic model?"
+  expect_source_contains: "body.md"
+
+- question: "How do I declare multiple body parameters in one request?"
+  expect_source_contains: "body-multiple-params"
+
+- question: "How do I use nested models in a request body?"
+  expect_source_contains: "body-nested-models"
+
+- question: "How do I define a response model?"
+  expect_source_contains: "response-model"
+
+- question: "How do I set a custom HTTP status code for a response?"
+  expect_source_contains: "response-status-code"
+
+- question: "How do I handle errors and raise an HTTPException?"
+  expect_source_contains: "handling-errors"
+
+- question: "How do I receive form data instead of JSON?"
+  expect_source_contains: "request-forms"
+
+- question: "How do I handle file uploads?"
+  expect_source_contains: "request-files"
+
+- question: "How do I declare header parameters?"
+  expect_source_contains: "header-params.md"
+
+- question: "How do I declare cookie parameters?"
+  expect_source_contains: "cookie-params.md"
+
+- question: "How do I run tasks in the background after returning a response?"
+  expect_source_contains: "background-tasks"
+
+- question: "How do I add metadata and configuration to a path operation?"
+  expect_source_contains: "path-operation-configuration"
+
+- question: "How do I structure a bigger application across multiple files?"
+  expect_source_contains: "bigger-applications"
+
+- question: "How do I add CORS middleware?"
+  expect_source_contains: "cors"
+
+- question: "How do I write tests for a FastAPI application?"
+  expect_source_contains: "testing"
+
+- question: "How do I use extra data types like UUID or datetime?"
+  expect_source_contains: "extra-data-types"
