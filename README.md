@@ -7,6 +7,20 @@ low-confidence answers for human review.
 The answering half is the common part. The evaluation half is the point: it measures
 whether the answers can be trusted, instead of assuming they can.
 
+## What this project demonstrates
+
+This is meant to show a capability, not a domain. It builds an AI system that makes
+information easy to ask questions against, and then checks whether the answers can
+actually be trusted: retrieval, grounded answers with citations, an evaluation harness,
+and a flag that routes low-confidence answers to a human. FastAPI documentation is just a
+clean, public set of docs to build it on. The same approach works on an internal knowledge
+base, support or policy content, or any set of documents a team needs to search and rely on.
+
+It goes with a separate data-integration project that maps public biomedical sources into a
+Biolink knowledge graph. The domains are different on purpose. Both come down to the same
+work: taking scattered or inconsistent information and turning it into something structured,
+usable, and checkable.
+
 ## Demo
 
 ```
